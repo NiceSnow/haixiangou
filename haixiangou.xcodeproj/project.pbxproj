@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1038D3671E14F8AE00A6EDC4 /* ChannelCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1038D3661E14F8AE00A6EDC4 /* ChannelCollectionViewCell.m */; };
+		1038D36C1E150ED600A6EDC4 /* RecommendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1038D36B1E150ED600A6EDC4 /* RecommendTableViewCell.m */; };
+		1038D36F1E1513DC00A6EDC4 /* RecommendCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1038D36E1E1513DC00A6EDC4 /* RecommendCollectionViewCell.m */; };
 		107A6C4E1E14D94700099DC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6C4D1E14D94700099DC2 /* main.m */; };
 		107A6C511E14D94700099DC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6C501E14D94700099DC2 /* AppDelegate.m */; };
 		107A6C541E14D94700099DC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6C531E14D94700099DC2 /* ViewController.m */; };
@@ -52,6 +54,10 @@
 /* Begin PBXFileReference section */
 		1038D3651E14F8AE00A6EDC4 /* ChannelCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelCollectionViewCell.h; sourceTree = "<group>"; };
 		1038D3661E14F8AE00A6EDC4 /* ChannelCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelCollectionViewCell.m; sourceTree = "<group>"; };
+		1038D36A1E150ED600A6EDC4 /* RecommendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendTableViewCell.h; sourceTree = "<group>"; };
+		1038D36B1E150ED600A6EDC4 /* RecommendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendTableViewCell.m; sourceTree = "<group>"; };
+		1038D36D1E1513DC00A6EDC4 /* RecommendCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendCollectionViewCell.h; sourceTree = "<group>"; };
+		1038D36E1E1513DC00A6EDC4 /* RecommendCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendCollectionViewCell.m; sourceTree = "<group>"; };
 		107A6C491E14D94700099DC2 /* haixiangou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = haixiangou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		107A6C4D1E14D94700099DC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		107A6C4F1E14D94700099DC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,6 +132,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1038D3681E150EB200A6EDC4 /* RecommendView */ = {
+			isa = PBXGroup;
+			children = (
+				1038D36A1E150ED600A6EDC4 /* RecommendTableViewCell.h */,
+				1038D36B1E150ED600A6EDC4 /* RecommendTableViewCell.m */,
+				1038D36D1E1513DC00A6EDC4 /* RecommendCollectionViewCell.h */,
+				1038D36E1E1513DC00A6EDC4 /* RecommendCollectionViewCell.m */,
+			);
+			path = RecommendView;
+			sourceTree = "<group>";
+		};
+		1038D3691E150EBC00A6EDC4 /* RankingView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RankingView;
+			sourceTree = "<group>";
+		};
 		107A6C401E14D94700099DC2 = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +241,8 @@
 		107A6C841E14DD7F00099DC2 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1038D3691E150EBC00A6EDC4 /* RankingView */,
+				1038D3681E150EB200A6EDC4 /* RecommendView */,
 				107A6CB01E14F00700099DC2 /* ChannelView */,
 				107A6C851E14DD7F00099DC2 /* MainRootViewCOntroller */,
 			);
@@ -528,11 +554,13 @@
 				107A6CAE1E14E2FD00099DC2 /* TAPageControl.m in Sources */,
 				107A6C511E14D94700099DC2 /* AppDelegate.m in Sources */,
 				107A6C4E1E14D94700099DC2 /* main.m in Sources */,
+				1038D36C1E150ED600A6EDC4 /* RecommendTableViewCell.m in Sources */,
 				107A6CAC1E14E2FD00099DC2 /* TAAnimatedDotView.m in Sources */,
 				107A6C921E14DF1C00099DC2 /* ClassRootViewController.m in Sources */,
 				107A6CA91E14E2FD00099DC2 /* SDCollectionViewCell.m in Sources */,
 				107A6CB31E14F41800099DC2 /* ChannelTableViewCell.m in Sources */,
 				107A6CAF1E14E2FD00099DC2 /* UIView+SDExtension.m in Sources */,
+				1038D36F1E1513DC00A6EDC4 /* RecommendCollectionViewCell.m in Sources */,
 				1038D3671E14F8AE00A6EDC4 /* ChannelCollectionViewCell.m in Sources */,
 				107A6CAA1E14E2FD00099DC2 /* SDCycleScrollView.m in Sources */,
 			);

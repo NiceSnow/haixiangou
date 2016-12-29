@@ -9,6 +9,7 @@
 #import "MainRootViewController.h"
 #import "SDCycleScrollView.h"
 #import "ChannelTableViewCell.h"
+#import "RecommendTableViewCell.h"
 
 @interface MainRootViewController ()<UISearchBarDelegate,UITableViewDelegate,UITableViewDataSource,SDCycleScrollViewDelegate>
 @property (nonatomic, strong)UISearchBar * searchBar;
@@ -46,7 +47,7 @@
             break;
         case 1:
         {
-            return 45;
+            return screenWidth*3/5*3/5;
         }
             break;
         case 2:
@@ -74,7 +75,7 @@
             break;
         case 1:
         {
-            return self.RecommendArray.count;
+            return 1;
         }
             break;
         case 2:
@@ -111,7 +112,12 @@
             break;
         case 1:
         {
-            
+            RecommendTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"RecommendCell"];
+            if (!cell) {
+                cell = [[RecommendTableViewCell alloc]initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"RecommendCell"];
+            }
+            cell.dataArray = self.RecommendArray;
+            return cell;
         }
             break;
         case 2:
