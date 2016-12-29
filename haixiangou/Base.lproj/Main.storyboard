@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="-575" y="-217"/>
         </scene>
-        <!--View Controller-->
+        <!--Class Root View Controller-->
         <scene sceneID="qNL-jx-a58">
             <objects>
-                <viewController id="2TH-yP-bsC" sceneMemberID="viewController">
+                <viewController id="2TH-yP-bsC" customClass="ClassRootViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fNv-3e-kc6"/>
                         <viewControllerLayoutGuide type="bottom" id="VUY-KC-HbX"/>
@@ -82,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="-575" y="-888"/>
         </scene>
-        <!--View Controller-->
+        <!--Main Root View Controller-->
         <scene sceneID="TQE-Xx-R9c">
             <objects>
-                <viewController id="yJh-3C-8TX" sceneMemberID="viewController">
+                <viewController id="yJh-3C-8TX" customClass="MainRootViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qhA-ii-chm"/>
                         <viewControllerLayoutGuide type="bottom" id="ILc-Jw-RLg"/>
@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="-575" y="447"/>
         </scene>
-        <!--View Controller-->
+        <!--Shopping Root View Controller-->
         <scene sceneID="E7T-vY-RMB">
             <objects>
-                <viewController id="pxr-X5-Q9p" sceneMemberID="viewController">
+                <viewController id="pxr-X5-Q9p" customClass="ShoppingRootViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z32-Y4-0QO"/>
                         <viewControllerLayoutGuide type="bottom" id="0Nz-Db-IBI"/>
@@ -154,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="-575" y="1142"/>
         </scene>
-        <!--View Controller-->
+        <!--My Root View Controller-->
         <scene sceneID="cOn-Nd-EI3">
             <objects>
-                <viewController id="rVe-Pt-e8X" sceneMemberID="viewController">
+                <viewController id="rVe-Pt-e8X" customClass="MyRootViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8t3-FQ-amb"/>
                         <viewControllerLayoutGuide type="bottom" id="ouF-fO-tN4"/>

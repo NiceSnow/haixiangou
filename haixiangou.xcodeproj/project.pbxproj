@@ -16,6 +16,10 @@
 		107A6C5F1E14D94700099DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 107A6C5D1E14D94700099DC2 /* LaunchScreen.storyboard */; };
 		107A6C6A1E14D94700099DC2 /* haixiangouTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6C691E14D94700099DC2 /* haixiangouTests.m */; };
 		107A6C751E14D94700099DC2 /* haixiangouUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6C741E14D94700099DC2 /* haixiangouUITests.m */; };
+		107A6C8A1E14DDAB00099DC2 /* MainRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6C891E14DDAB00099DC2 /* MainRootViewController.m */; };
+		107A6C921E14DF1C00099DC2 /* ClassRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6C911E14DF1C00099DC2 /* ClassRootViewController.m */; };
+		107A6C951E14DF2700099DC2 /* ShoppingRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6C941E14DF2700099DC2 /* ShoppingRootViewController.m */; };
+		107A6C981E14DF3300099DC2 /* MyRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6C971E14DF3300099DC2 /* MyRootViewController.m */; };
 		F165582AA566C4E475EF86F3 /* libPods-haixiangou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F75E5EAD99DAA0F5B77689C9 /* libPods-haixiangou.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +58,16 @@
 		107A6C701E14D94700099DC2 /* haixiangouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = haixiangouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		107A6C741E14D94700099DC2 /* haixiangouUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = haixiangouUITests.m; sourceTree = "<group>"; };
 		107A6C761E14D94700099DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		107A6C881E14DDAB00099DC2 /* MainRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainRootViewController.h; sourceTree = "<group>"; };
+		107A6C891E14DDAB00099DC2 /* MainRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainRootViewController.m; sourceTree = "<group>"; };
+		107A6C8B1E14DDDE00099DC2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		107A6C8C1E14DE7500099DC2 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		107A6C901E14DF1C00099DC2 /* ClassRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassRootViewController.h; sourceTree = "<group>"; };
+		107A6C911E14DF1C00099DC2 /* ClassRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassRootViewController.m; sourceTree = "<group>"; };
+		107A6C931E14DF2700099DC2 /* ShoppingRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingRootViewController.h; sourceTree = "<group>"; };
+		107A6C941E14DF2700099DC2 /* ShoppingRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingRootViewController.m; sourceTree = "<group>"; };
+		107A6C961E14DF3300099DC2 /* MyRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRootViewController.h; sourceTree = "<group>"; };
+		107A6C971E14DF3300099DC2 /* MyRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRootViewController.m; sourceTree = "<group>"; };
 		481D2CF97375C3B0B63B2BFD /* Pods-haixiangou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-haixiangou.release.xcconfig"; path = "Pods/Target Support Files/Pods-haixiangou/Pods-haixiangou.release.xcconfig"; sourceTree = "<group>"; };
 		577E80E5CF3415411C66C90B /* Pods-haixiangou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-haixiangou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-haixiangou/Pods-haixiangou.debug.xcconfig"; sourceTree = "<group>"; };
 		F75E5EAD99DAA0F5B77689C9 /* libPods-haixiangou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-haixiangou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +102,7 @@
 		107A6C401E14D94700099DC2 = {
 			isa = PBXGroup;
 			children = (
+				107A6C821E14DD7F00099DC2 /* ViewController */,
 				107A6C4B1E14D94700099DC2 /* haixiangou */,
 				107A6C681E14D94700099DC2 /* haixiangouTests */,
 				107A6C731E14D94700099DC2 /* haixiangouUITests */,
@@ -112,6 +127,7 @@
 			children = (
 				107A6C4F1E14D94700099DC2 /* AppDelegate.h */,
 				107A6C501E14D94700099DC2 /* AppDelegate.m */,
+				107A6C8C1E14DE7500099DC2 /* Header.h */,
 				107A6C521E14D94700099DC2 /* ViewController.h */,
 				107A6C531E14D94700099DC2 /* ViewController.m */,
 				107A6C551E14D94700099DC2 /* Main.storyboard */,
@@ -128,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				107A6C4D1E14D94700099DC2 /* main.m */,
+				107A6C8B1E14DDDE00099DC2 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -148,6 +165,85 @@
 				107A6C761E14D94700099DC2 /* Info.plist */,
 			);
 			path = haixiangouUITests;
+			sourceTree = "<group>";
+		};
+		107A6C821E14DD7F00099DC2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				107A6C841E14DD7F00099DC2 /* MainViewController */,
+				107A6C831E14DD7F00099DC2 /* ClassViewController */,
+				107A6C871E14DD7F00099DC2 /* ShoppingViewController */,
+				107A6C861E14DD7F00099DC2 /* MyViewController */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		107A6C831E14DD7F00099DC2 /* ClassViewController */ = {
+			isa = PBXGroup;
+			children = (
+				107A6C8F1E14DF0900099DC2 /* ClassRootViewController */,
+			);
+			path = ClassViewController;
+			sourceTree = "<group>";
+		};
+		107A6C841E14DD7F00099DC2 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				107A6C851E14DD7F00099DC2 /* MainRootViewCOntroller */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		107A6C851E14DD7F00099DC2 /* MainRootViewCOntroller */ = {
+			isa = PBXGroup;
+			children = (
+				107A6C881E14DDAB00099DC2 /* MainRootViewController.h */,
+				107A6C891E14DDAB00099DC2 /* MainRootViewController.m */,
+			);
+			path = MainRootViewCOntroller;
+			sourceTree = "<group>";
+		};
+		107A6C861E14DD7F00099DC2 /* MyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				107A6C8D1E14DEF300099DC2 /* MyRootViewController */,
+			);
+			path = MyViewController;
+			sourceTree = "<group>";
+		};
+		107A6C871E14DD7F00099DC2 /* ShoppingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				107A6C8E1E14DF0200099DC2 /* ShoppingRootViewController */,
+			);
+			path = ShoppingViewController;
+			sourceTree = "<group>";
+		};
+		107A6C8D1E14DEF300099DC2 /* MyRootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				107A6C961E14DF3300099DC2 /* MyRootViewController.h */,
+				107A6C971E14DF3300099DC2 /* MyRootViewController.m */,
+			);
+			path = MyRootViewController;
+			sourceTree = "<group>";
+		};
+		107A6C8E1E14DF0200099DC2 /* ShoppingRootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				107A6C931E14DF2700099DC2 /* ShoppingRootViewController.h */,
+				107A6C941E14DF2700099DC2 /* ShoppingRootViewController.m */,
+			);
+			path = ShoppingRootViewController;
+			sourceTree = "<group>";
+		};
+		107A6C8F1E14DF0900099DC2 /* ClassRootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				107A6C901E14DF1C00099DC2 /* ClassRootViewController.h */,
+				107A6C911E14DF1C00099DC2 /* ClassRootViewController.m */,
+			);
+			path = ClassRootViewController;
 			sourceTree = "<group>";
 		};
 		BF268758B02970525CE71DE1 /* Frameworks */ = {
@@ -353,9 +449,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				107A6C5A1E14D94700099DC2 /* haixiangou.xcdatamodeld in Sources */,
+				107A6C8A1E14DDAB00099DC2 /* MainRootViewController.m in Sources */,
+				107A6C981E14DF3300099DC2 /* MyRootViewController.m in Sources */,
+				107A6C951E14DF2700099DC2 /* ShoppingRootViewController.m in Sources */,
 				107A6C541E14D94700099DC2 /* ViewController.m in Sources */,
 				107A6C511E14D94700099DC2 /* AppDelegate.m in Sources */,
 				107A6C4E1E14D94700099DC2 /* main.m in Sources */,
+				107A6C921E14DF1C00099DC2 /* ClassRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +604,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 46MF2PE5UD;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/haixiangou/PrefixHeader.pch";
 				INFOPLIST_FILE = haixiangou/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -518,6 +619,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 46MF2PE5UD;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/haixiangou/PrefixHeader.pch";
 				INFOPLIST_FILE = haixiangou/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
