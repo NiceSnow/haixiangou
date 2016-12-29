@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1038D3671E14F8AE00A6EDC4 /* ChannelCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1038D3661E14F8AE00A6EDC4 /* ChannelCollectionViewCell.m */; };
 		107A6C4E1E14D94700099DC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6C4D1E14D94700099DC2 /* main.m */; };
 		107A6C511E14D94700099DC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6C501E14D94700099DC2 /* AppDelegate.m */; };
 		107A6C541E14D94700099DC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6C531E14D94700099DC2 /* ViewController.m */; };
@@ -27,6 +28,7 @@
 		107A6CAD1E14E2FD00099DC2 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6CA41E14E2FD00099DC2 /* TADotView.m */; };
 		107A6CAE1E14E2FD00099DC2 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6CA61E14E2FD00099DC2 /* TAPageControl.m */; };
 		107A6CAF1E14E2FD00099DC2 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6CA81E14E2FD00099DC2 /* UIView+SDExtension.m */; };
+		107A6CB31E14F41800099DC2 /* ChannelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6CB21E14F41800099DC2 /* ChannelTableViewCell.m */; };
 		F165582AA566C4E475EF86F3 /* libPods-haixiangou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F75E5EAD99DAA0F5B77689C9 /* libPods-haixiangou.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1038D3651E14F8AE00A6EDC4 /* ChannelCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelCollectionViewCell.h; sourceTree = "<group>"; };
+		1038D3661E14F8AE00A6EDC4 /* ChannelCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelCollectionViewCell.m; sourceTree = "<group>"; };
 		107A6C491E14D94700099DC2 /* haixiangou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = haixiangou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		107A6C4D1E14D94700099DC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		107A6C4F1E14D94700099DC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 		107A6CA61E14E2FD00099DC2 /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
 		107A6CA71E14E2FD00099DC2 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
 		107A6CA81E14E2FD00099DC2 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		107A6CB11E14F41800099DC2 /* ChannelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelTableViewCell.h; sourceTree = "<group>"; };
+		107A6CB21E14F41800099DC2 /* ChannelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelTableViewCell.m; sourceTree = "<group>"; };
 		481D2CF97375C3B0B63B2BFD /* Pods-haixiangou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-haixiangou.release.xcconfig"; path = "Pods/Target Support Files/Pods-haixiangou/Pods-haixiangou.release.xcconfig"; sourceTree = "<group>"; };
 		577E80E5CF3415411C66C90B /* Pods-haixiangou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-haixiangou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-haixiangou/Pods-haixiangou.debug.xcconfig"; sourceTree = "<group>"; };
 		F75E5EAD99DAA0F5B77689C9 /* libPods-haixiangou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-haixiangou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +217,7 @@
 		107A6C841E14DD7F00099DC2 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
+				107A6CB01E14F00700099DC2 /* ChannelView */,
 				107A6C851E14DD7F00099DC2 /* MainRootViewCOntroller */,
 			);
 			path = MainViewController;
@@ -295,6 +302,18 @@
 				107A6CA81E14E2FD00099DC2 /* UIView+SDExtension.m */,
 			);
 			path = BannerView;
+			sourceTree = "<group>";
+		};
+		107A6CB01E14F00700099DC2 /* ChannelView */ = {
+			isa = PBXGroup;
+			children = (
+				107A6CB11E14F41800099DC2 /* ChannelTableViewCell.h */,
+				107A6CB21E14F41800099DC2 /* ChannelTableViewCell.m */,
+				1038D3651E14F8AE00A6EDC4 /* ChannelCollectionViewCell.h */,
+				1038D3661E14F8AE00A6EDC4 /* ChannelCollectionViewCell.m */,
+			);
+			name = ChannelView;
+			path = CapacityView;
 			sourceTree = "<group>";
 		};
 		BF268758B02970525CE71DE1 /* Frameworks */ = {
@@ -512,7 +531,9 @@
 				107A6CAC1E14E2FD00099DC2 /* TAAnimatedDotView.m in Sources */,
 				107A6C921E14DF1C00099DC2 /* ClassRootViewController.m in Sources */,
 				107A6CA91E14E2FD00099DC2 /* SDCollectionViewCell.m in Sources */,
+				107A6CB31E14F41800099DC2 /* ChannelTableViewCell.m in Sources */,
 				107A6CAF1E14E2FD00099DC2 /* UIView+SDExtension.m in Sources */,
+				1038D3671E14F8AE00A6EDC4 /* ChannelCollectionViewCell.m in Sources */,
 				107A6CAA1E14E2FD00099DC2 /* SDCycleScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

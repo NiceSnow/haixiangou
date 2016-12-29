@@ -8,11 +8,17 @@
 
 #import "MainRootViewController.h"
 #import "SDCycleScrollView.h"
+#import "ChannelTableViewCell.h"
 
 @interface MainRootViewController ()<UISearchBarDelegate,UITableViewDelegate,UITableViewDataSource,SDCycleScrollViewDelegate>
 @property (nonatomic, strong)UISearchBar * searchBar;
 @property (nonatomic ,strong) UITableView* tableView;
 @property(nonatomic,strong) SDCycleScrollView* BannerView;
+
+@property(nonatomic,strong) NSMutableArray* bannerArray;
+@property(nonatomic,strong) NSMutableArray* ChannelArray;
+@property(nonatomic,strong) NSMutableArray* RecommendArray;
+@property(nonatomic,strong) NSMutableArray* RankingArray;
 @end
 
 @implementation MainRootViewController
@@ -31,7 +37,28 @@
 #pragma mark -- tableView
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 45;
+    switch (indexPath.section) {
+        case 0:
+        {
+            NSInteger x = ceil(self.ChannelArray.count/4.0);
+            return (screenWidth/4)*4/3 * x;
+        }
+            break;
+        case 1:
+        {
+            return 45;
+        }
+            break;
+        case 2:
+        {
+            return 60;
+        }
+            break;
+            
+        default:
+            break;
+    }
+    return 0;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -39,19 +66,87 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    switch (section) {
+        case 0:
+        {
+            return 1;
+        }
+            break;
+        case 1:
+        {
+            return self.RecommendArray.count;
+        }
+            break;
+        case 2:
+        {
+            return self.RankingArray.count;
+        }
+            break;
+            
+        default:
+            break;
+    }
+    return 0;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    if (section == 0) {
+        return 0.001;
+    }
     return 45;
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    switch (indexPath.section) {
+        case 0:
+        {
+            ChannelTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"ChannelCell"];
+            if (!cell) {
+                cell = [[ChannelTableViewCell alloc]initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"ChannelCell"];
+            }
+            cell.dataArray = self.ChannelArray;
+            return cell;
+        }
+            break;
+        case 1:
+        {
+            
+        }
+            break;
+        case 2:
+        {
+            
+        }
+            break;
+        default:
+            break;
+    }
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"mainCell"];
     if (!cell) {
         cell = [[UITableViewCell alloc]initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"mainCell"];
     }
     return cell;
+}
+
+-(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    if (section == 0) {
+        return nil;
+    }
+    UIView* sectionHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, screenWidth, 45)];
+    sectionHeaderView.backgroundColor = [UIColor blueColor];
+    UILabel* label = [UILabel new];
+    if (section == 1) {
+        label.text = [NSString stringWithFormat:@"————%@————",@"  个性推荐  "];
+    }else if (section == 2){
+        label.text = [NSString stringWithFormat:@"————%@————",@"TOP 10排行榜"];
+    }
+    label.textAlignment = NSTextAlignmentCenter;
+    [sectionHeaderView addSubview:label];
+    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.right.bottom.offset(0);
+    }];
+    return sectionHeaderView;
 }
 
 #pragma mark -- end TableView
@@ -101,17 +196,12 @@
         _tableView.dataSource = self;
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.tableFooterView = [UIView new];
-        //        由于刷新  不采用自动获取高度
-        //        _tableView.estimatedRowHeight = 10;
-        //        _tableView.rowHeight = UITableViewAutomaticDimension;
-//        _tableView.separatorStyle = UITableViewCellSelectionStyleNone;
         if ([_tableView respondsToSelector:@selector(setSeparatorInset:)]) {
             [_tableView setSeparatorInset:UIEdgeInsetsMake(0, 10, 0, 10)];
         }
         if ([_tableView respondsToSelector:@selector(setLayoutMargins:)]) {
             [_tableView setLayoutMargins:UIEdgeInsetsMake(0, 10, 0, 10)];
         }
-//        _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(courseRecommend)];
     }
     return _tableView;
 }
@@ -127,5 +217,35 @@
     return _BannerView;
 }
 
+-(NSMutableArray *)bannerArray{
+    if (!_bannerArray) {
+        _bannerArray = [NSMutableArray new];
+        _bannerArray = [@[@"123",@"456",@"456",@"456",@"456"]mutableCopy];
+    }
+    return _bannerArray;
+}
 
+-(NSMutableArray *)ChannelArray{
+    if (!_ChannelArray) {
+        _ChannelArray = [NSMutableArray new];
+        _ChannelArray = [@[@"123",@"456",@"456",@"456",@"456"]mutableCopy];
+    }
+    return _ChannelArray;
+}
+
+-(NSMutableArray *)RecommendArray{
+    if (!_RecommendArray) {
+        _RecommendArray = [NSMutableArray new];
+        _RecommendArray = [@[@"123",@"456",@"456",@"456",@"456"]mutableCopy];
+    }
+    return _RecommendArray;
+}
+
+-(NSMutableArray *)RankingArray{
+    if (!_RankingArray) {
+        _RankingArray = [NSMutableArray new];
+        _RankingArray = [@[@"123",@"456",@"456",@"456",@"456"]mutableCopy];
+    }
+    return _RankingArray;
+}
 @end
