@@ -16,6 +16,7 @@
 		107A6C5F1E14D94700099DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 107A6C5D1E14D94700099DC2 /* LaunchScreen.storyboard */; };
 		107A6C6A1E14D94700099DC2 /* haixiangouTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6C691E14D94700099DC2 /* haixiangouTests.m */; };
 		107A6C751E14D94700099DC2 /* haixiangouUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6C741E14D94700099DC2 /* haixiangouUITests.m */; };
+		F165582AA566C4E475EF86F3 /* libPods-haixiangou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F75E5EAD99DAA0F5B77689C9 /* libPods-haixiangou.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,9 @@
 		107A6C701E14D94700099DC2 /* haixiangouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = haixiangouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		107A6C741E14D94700099DC2 /* haixiangouUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = haixiangouUITests.m; sourceTree = "<group>"; };
 		107A6C761E14D94700099DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		481D2CF97375C3B0B63B2BFD /* Pods-haixiangou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-haixiangou.release.xcconfig"; path = "Pods/Target Support Files/Pods-haixiangou/Pods-haixiangou.release.xcconfig"; sourceTree = "<group>"; };
+		577E80E5CF3415411C66C90B /* Pods-haixiangou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-haixiangou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-haixiangou/Pods-haixiangou.debug.xcconfig"; sourceTree = "<group>"; };
+		F75E5EAD99DAA0F5B77689C9 /* libPods-haixiangou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-haixiangou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F165582AA566C4E475EF86F3 /* libPods-haixiangou.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +92,8 @@
 				107A6C681E14D94700099DC2 /* haixiangouTests */,
 				107A6C731E14D94700099DC2 /* haixiangouUITests */,
 				107A6C4A1E14D94700099DC2 /* Products */,
+				FE293912720046596DEAA11E /* Pods */,
+				BF268758B02970525CE71DE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +150,23 @@
 			path = haixiangouUITests;
 			sourceTree = "<group>";
 		};
+		BF268758B02970525CE71DE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F75E5EAD99DAA0F5B77689C9 /* libPods-haixiangou.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE293912720046596DEAA11E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				577E80E5CF3415411C66C90B /* Pods-haixiangou.debug.xcconfig */,
+				481D2CF97375C3B0B63B2BFD /* Pods-haixiangou.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 107A6C791E14D94700099DC2 /* Build configuration list for PBXNativeTarget "haixiangou" */;
 			buildPhases = (
+				B14791CEDBB0F3226E0D1636 /* [CP] Check Pods Manifest.lock */,
 				107A6C451E14D94700099DC2 /* Sources */,
 				107A6C461E14D94700099DC2 /* Frameworks */,
 				107A6C471E14D94700099DC2 /* Resources */,
+				A1623097198C01BCD08EC947 /* [CP] Embed Pods Frameworks */,
+				0217AABFFC03CD961A5C543B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,6 +237,7 @@
 				TargetAttributes = {
 					107A6C481E14D94700099DC2 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 46MF2PE5UD;
 						ProvisioningStyle = Automatic;
 					};
 					107A6C641E14D94700099DC2 = {
@@ -270,6 +298,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0217AABFFC03CD961A5C543B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-haixiangou/Pods-haixiangou-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1623097198C01BCD08EC947 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-haixiangou/Pods-haixiangou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B14791CEDBB0F3226E0D1636 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		107A6C451E14D94700099DC2 /* Sources */ = {
@@ -424,9 +500,12 @@
 		};
 		107A6C7A1E14D94700099DC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 577E80E5CF3415411C66C90B /* Pods-haixiangou.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46MF2PE5UD;
 				INFOPLIST_FILE = haixiangou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.amed.haixiangou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,9 +514,12 @@
 		};
 		107A6C7B1E14D94700099DC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 481D2CF97375C3B0B63B2BFD /* Pods-haixiangou.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46MF2PE5UD;
 				INFOPLIST_FILE = haixiangou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.amed.haixiangou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,6 +591,7 @@
 				107A6C7B1E14D94700099DC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		107A6C7C1E14D94700099DC2 /* Build configuration list for PBXNativeTarget "haixiangouTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +600,7 @@
 				107A6C7E1E14D94700099DC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		107A6C7F1E14D94700099DC2 /* Build configuration list for PBXNativeTarget "haixiangouUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +609,7 @@
 				107A6C811E14D94700099DC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
