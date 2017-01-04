@@ -10,6 +10,7 @@
 #import "SDCycleScrollView.h"
 #import "ChannelTableViewCell.h"
 #import "RecommendTableViewCell.h"
+#import "RankTableViewCell.h"
 
 @interface MainRootViewController ()<UISearchBarDelegate,UITableViewDelegate,UITableViewDataSource,SDCycleScrollViewDelegate>
 @property (nonatomic, strong)UISearchBar * searchBar;
@@ -52,7 +53,7 @@
             break;
         case 2:
         {
-            return 60;
+            return 90;
         }
             break;
             
@@ -122,7 +123,12 @@
             break;
         case 2:
         {
+            RankTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"RankTableViewCell"];
+            if (!cell) {
+                cell = [[RankTableViewCell alloc]initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"RankTableViewCell"];
+            }
             
+            return cell;
         }
             break;
         default:

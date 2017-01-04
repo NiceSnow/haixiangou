@@ -10,6 +10,7 @@
 		1038D3671E14F8AE00A6EDC4 /* ChannelCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1038D3661E14F8AE00A6EDC4 /* ChannelCollectionViewCell.m */; };
 		1038D36C1E150ED600A6EDC4 /* RecommendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1038D36B1E150ED600A6EDC4 /* RecommendTableViewCell.m */; };
 		1038D36F1E1513DC00A6EDC4 /* RecommendCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1038D36E1E1513DC00A6EDC4 /* RecommendCollectionViewCell.m */; };
+		1068742F1E15FA50002C1B0D /* RankTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1068742E1E15FA50002C1B0D /* RankTableViewCell.m */; };
 		107A6C4E1E14D94700099DC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6C4D1E14D94700099DC2 /* main.m */; };
 		107A6C511E14D94700099DC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6C501E14D94700099DC2 /* AppDelegate.m */; };
 		107A6C541E14D94700099DC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6C531E14D94700099DC2 /* ViewController.m */; };
@@ -31,6 +32,8 @@
 		107A6CAE1E14E2FD00099DC2 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6CA61E14E2FD00099DC2 /* TAPageControl.m */; };
 		107A6CAF1E14E2FD00099DC2 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6CA81E14E2FD00099DC2 /* UIView+SDExtension.m */; };
 		107A6CB31E14F41800099DC2 /* ChannelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 107A6CB21E14F41800099DC2 /* ChannelTableViewCell.m */; };
+		10A1716F1E1B569300205733 /* ClassCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A1716E1E1B569300205733 /* ClassCollectionViewCell.m */; };
+		10A171721E1B7EAC00205733 /* ShoppingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A171711E1B7EAC00205733 /* ShoppingTableViewCell.m */; };
 		F165582AA566C4E475EF86F3 /* libPods-haixiangou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F75E5EAD99DAA0F5B77689C9 /* libPods-haixiangou.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,8 @@
 		1038D36B1E150ED600A6EDC4 /* RecommendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendTableViewCell.m; sourceTree = "<group>"; };
 		1038D36D1E1513DC00A6EDC4 /* RecommendCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendCollectionViewCell.h; sourceTree = "<group>"; };
 		1038D36E1E1513DC00A6EDC4 /* RecommendCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendCollectionViewCell.m; sourceTree = "<group>"; };
+		1068742D1E15FA50002C1B0D /* RankTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankTableViewCell.h; sourceTree = "<group>"; };
+		1068742E1E15FA50002C1B0D /* RankTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankTableViewCell.m; sourceTree = "<group>"; };
 		107A6C491E14D94700099DC2 /* haixiangou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = haixiangou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		107A6C4D1E14D94700099DC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		107A6C4F1E14D94700099DC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +106,10 @@
 		107A6CA81E14E2FD00099DC2 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
 		107A6CB11E14F41800099DC2 /* ChannelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelTableViewCell.h; sourceTree = "<group>"; };
 		107A6CB21E14F41800099DC2 /* ChannelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelTableViewCell.m; sourceTree = "<group>"; };
+		10A1716D1E1B569300205733 /* ClassCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassCollectionViewCell.h; sourceTree = "<group>"; };
+		10A1716E1E1B569300205733 /* ClassCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassCollectionViewCell.m; sourceTree = "<group>"; };
+		10A171701E1B7EAC00205733 /* ShoppingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingTableViewCell.h; sourceTree = "<group>"; };
+		10A171711E1B7EAC00205733 /* ShoppingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingTableViewCell.m; sourceTree = "<group>"; };
 		481D2CF97375C3B0B63B2BFD /* Pods-haixiangou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-haixiangou.release.xcconfig"; path = "Pods/Target Support Files/Pods-haixiangou/Pods-haixiangou.release.xcconfig"; sourceTree = "<group>"; };
 		577E80E5CF3415411C66C90B /* Pods-haixiangou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-haixiangou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-haixiangou/Pods-haixiangou.debug.xcconfig"; sourceTree = "<group>"; };
 		F75E5EAD99DAA0F5B77689C9 /* libPods-haixiangou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-haixiangou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +155,8 @@
 		1038D3691E150EBC00A6EDC4 /* RankingView */ = {
 			isa = PBXGroup;
 			children = (
+				1068742D1E15FA50002C1B0D /* RankTableViewCell.h */,
+				1068742E1E15FA50002C1B0D /* RankTableViewCell.m */,
 			);
 			path = RankingView;
 			sourceTree = "<group>";
@@ -288,6 +299,8 @@
 			children = (
 				107A6C931E14DF2700099DC2 /* ShoppingRootViewController.h */,
 				107A6C941E14DF2700099DC2 /* ShoppingRootViewController.m */,
+				10A171701E1B7EAC00205733 /* ShoppingTableViewCell.h */,
+				10A171711E1B7EAC00205733 /* ShoppingTableViewCell.m */,
 			);
 			path = ShoppingRootViewController;
 			sourceTree = "<group>";
@@ -297,6 +310,8 @@
 			children = (
 				107A6C901E14DF1C00099DC2 /* ClassRootViewController.h */,
 				107A6C911E14DF1C00099DC2 /* ClassRootViewController.m */,
+				10A1716D1E1B569300205733 /* ClassCollectionViewCell.h */,
+				10A1716E1E1B569300205733 /* ClassCollectionViewCell.m */,
 			);
 			path = ClassRootViewController;
 			sourceTree = "<group>";
@@ -545,6 +560,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				107A6C5A1E14D94700099DC2 /* haixiangou.xcdatamodeld in Sources */,
+				10A171721E1B7EAC00205733 /* ShoppingTableViewCell.m in Sources */,
 				107A6CAD1E14E2FD00099DC2 /* TADotView.m in Sources */,
 				107A6C8A1E14DDAB00099DC2 /* MainRootViewController.m in Sources */,
 				107A6C981E14DF3300099DC2 /* MyRootViewController.m in Sources */,
@@ -556,11 +572,13 @@
 				107A6C4E1E14D94700099DC2 /* main.m in Sources */,
 				1038D36C1E150ED600A6EDC4 /* RecommendTableViewCell.m in Sources */,
 				107A6CAC1E14E2FD00099DC2 /* TAAnimatedDotView.m in Sources */,
+				10A1716F1E1B569300205733 /* ClassCollectionViewCell.m in Sources */,
 				107A6C921E14DF1C00099DC2 /* ClassRootViewController.m in Sources */,
 				107A6CA91E14E2FD00099DC2 /* SDCollectionViewCell.m in Sources */,
 				107A6CB31E14F41800099DC2 /* ChannelTableViewCell.m in Sources */,
 				107A6CAF1E14E2FD00099DC2 /* UIView+SDExtension.m in Sources */,
 				1038D36F1E1513DC00A6EDC4 /* RecommendCollectionViewCell.m in Sources */,
+				1068742F1E15FA50002C1B0D /* RankTableViewCell.m in Sources */,
 				1038D3671E14F8AE00A6EDC4 /* ChannelCollectionViewCell.m in Sources */,
 				107A6CAA1E14E2FD00099DC2 /* SDCycleScrollView.m in Sources */,
 			);
